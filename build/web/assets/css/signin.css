@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.75)),url(../imgs/signin.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    margin: 0;
+    padding: 0;
+    width: 35%;
+    height:auto; 
+    margin: 4vh auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255,0.85);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+#header {    
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+}
+
+#header-img-logo {
+    width: 6vw;
+    margin: 0 auto;
+    padding-top: 2vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-text-th {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#header-text-en {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header-text {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+#content {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-input-username, 
+#content-input-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#input-username {
+    margin: 0 0 1rem 0;
+}
+
+#input-username,
+#input-password {
+    width: 20vw;
+    height: 2vw;   
+    border: none;
+    border-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1vw;
+    padding: 0.3vw;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px rgba(140, 140, 140, 0.4);
+}
+
+#input-username:hover, 
+#input-password:hover {
+    outline: none; 
+    background-color: #fff;
+    box-shadow: inset 0px 0px 3px 1px rgba(140, 140, 140, 0.5);
+}
+
+#input-username:focus, 
+#input-password:focus {
+    outline: none; 
+    background-color: #fff;
+    box-shadow: inset 0px 0px 3px 1px rgba(140, 140, 140, 0.5);
+}
+
+#content-input-button {
+    padding-top: 0.5vw; 
+    padding-bottom: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#content-input-button > #button-signin-submit {
+    background-color: rgba(0, 153, 61, 0.79);
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    /*margin-left: 1.3rem;*/
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-input-button > .button-signin-reset {
+    margin-left: 0.6rem;  
+    background-color: rgba(255, 132, 0, 0.79);
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-signin-submit,
+#button-signin-reset {
+    width: 28%;
+    height: 2.5vw;
+    margin: 0 0.2rem;   
+    border-radius: 0px;
+    border: none;   
+    opacity: 0.8;
+    transition: 0.1s;
+}
+
+#button-signin-submit:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 0px 10px 3px rgba(0, 153, 61, 0.79);
+}
+
+#button-signin-submit:focus {
+    outline: none;  
+}
+
+#button-signin-reset:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 0px 10px 3px rgba(255, 132, 0, 0.79);
+}
+
+#button-signin-reset:focus {
+    outline: none;  
+}
+
+#content-username-password-null {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#username-password-null-message {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 480px) { 
+
+    #header {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+    }
+    #header-img-logo {
+        /*margin-top: 50%;*/
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-text {
+        font-family: 'Kanit', sans-serif;
+        margin: 0.3rem 0;
+    }
+
+    .header-text-th {
+        font-family: 'Kanit', sans-serif;
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    #content {
+        margin-top: -0.5rem;
+    }
+
+    #card {
+        position: relative;
+        /*padding: 0;*/
+        /*margin: 0;*/
+        margin-top: 50%;
+        width: 90%;
+        height:100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #input-username {
+        margin-top: 0.5rem;
+    }
+
+    #input-username,
+    #input-password {
+
+        width: 57vw;
+        height: 10vw;   
+        font-size: 3vw;
+    }
+
+    #content-input-button {
+        /*background-color: black;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*margin-left: 7.5vw;*/
+    }
+
+    #button-signin-submit,
+    #button-signin-reset {       
+        width: 28%;
+        height: 10vw; 
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #content-input-button > #button-signin-submit {
+        font-size: 3vw;
+    }
+
+    #content-input-button > .button-signin-reset {
+        font-size: 3vw;
+    }
+
+    .modal-content {
+        max-width: 20rem;
+        top: 40vh;
+    }
+
+    h3 {
+        margin-top: 0.8rem;
+        font-family: 'Kanit', sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    h4.modal-text-display {
+        font-size: 0.8rem;
+        font-family: 'Kanit', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 640px) { 
+
+    #header {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 1vw;
+    }
+    #header-img-logo {
+        /*margin-top: 50%;*/
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-text {
+        font-family: 'Kanit', sans-serif;
+        margin: 0.3rem 0;
+    }
+
+    .header-text-th {
+        font-family: 'Kanit', sans-serif;
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    #content {
+        margin-top: -0.5rem;
+    }
+
+    #card {
+        position: relative;
+        /*padding: 0;*/
+        /*margin: 0;*/
+        margin-top: 20vh;
+        width: 90%;
+        height:100%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #input-username {
+        margin-top: 0.5rem;
+    }
+
+    #input-username,
+    #input-password {
+
+        width: 57vw;
+        height: 10vw;   
+        font-size: 3vw;
+    }
+
+    #content-input-button {
+        /*background-color: black;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*margin-left: 7.5vw;*/
+    }
+
+    #button-signin-submit,
+    #button-signin-reset {       
+        width: 28%;
+        height: 10vw; 
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #content-input-button > #button-signin-submit {
+        font-size: 3vw;
+    }
+
+    #content-input-button > .button-signin-reset {
+        font-size: 3vw;
+    }
+
+    .modal-content {
+        max-width: 20rem;
+        top: 40vh;
+    }
+
+    h3 {
+        margin-top: 1.5rem;
+        font-family: 'Kanit', sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    h4.modal-text-display {
+        font-size: 0.8rem;
+        font-family: 'Kanit', sans-serif;
+    }
+}
+
+
+.modal {    
+    position: fixed;
+    float: left;
+    left: 0;
+    top: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.75s;
+    border: none;
+}
+.modal-content {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 24rem;
+    display: block;  
+}
+
+.modal-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.close-button-logo {
+    padding: 0.5rem;
+    float: left;
+    width: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.modal-text {   
+    font-family: 'Kanit', sans-serif;
+    padding: 2rem 0 4rem 0;
+    margin: 0;
+}
+
+h4.modal-text-display {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button {
+    font-size: 1.5rem;
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.close-button:hover {
+    background-color: darkgray;    
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.75s;
+}

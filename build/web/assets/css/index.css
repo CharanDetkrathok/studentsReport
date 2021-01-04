@@ -1,0 +1,14 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/bg-index.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;   
+}
+
