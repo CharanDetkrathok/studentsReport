@@ -45,7 +45,7 @@ public class ReportCantralModel {
 
     public List<ReportCentralInfo> findEnrollYearAndSemester() {
         List<ReportCentralInfo> list = new ArrayList<ReportCentralInfo>();
-        String sql = "SELECT DISTINCT A.ENROLL_YEAR,A.ENROLL_SEMESTER FROM BDBASS01.REP_STAT_STD_NEW A ORDER BY A.ENROLL_YEAR";
+        String sql = "SELECT DISTINCT A.ENROLL_YEAR,A.ENROLL_SEMESTER FROM bdbass01.ass_stdregis_ru2 A ORDER BY A.ENROLL_YEAR";
         List<Map<String, Object>> result = db.queryList(sql);
 
         for (Map<String, Object> row : result) {

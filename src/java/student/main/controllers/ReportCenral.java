@@ -35,7 +35,7 @@ public class ReportCenral extends HttpServlet {
 
             List<ReportCentralInfo> enroll = getReportCentral.findEnrollYearAndSemester();
             request.setAttribute("enroll", enroll);
-            
+                        
             RequestDispatcher rs = request.getRequestDispatcher("main-content/report-central.jsp");
             rs.forward(request, response);
 

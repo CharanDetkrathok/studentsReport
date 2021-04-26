@@ -31,7 +31,7 @@ public class ReportProvincialDetail extends HttpServlet {
 
             List<ReportProvincialInfo> enroll = getReportProvincial.findEnrollYearAndSemester();
             request.setAttribute("enroll", enroll);
-
+            
             RequestDispatcher rs = request.getRequestDispatcher("main-content/report-provincial-detail.jsp");
             rs.forward(request, response);
 

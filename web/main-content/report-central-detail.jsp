@@ -30,7 +30,8 @@
                         <option class="select-option" value="">ปี/ภาค การศึกษา</option>
                         <c:forEach items="${enroll}" var = "enroll" varStatus="count">   
                             <c:choose>
-                                <c:when test = "${enroll.ENROLL_YEAR >= '2563' && enroll.ENROLL_SEMESTER == '2'}">
+                                <%--<c:when test = "${enroll.ENROLL_YEAR >= '2563' && enroll.ENROLL_SEMESTER == '2'}">--%>
+                                <c:when test = "${enroll.ENROLL_YEAR != null}">
                                     <option class="select-option" value="${enroll.ENROLL_YEAR}/${enroll.ENROLL_SEMESTER}">${enroll.ENROLL_YEAR} / ${enroll.ENROLL_SEMESTER}</option>
                                 </c:when>
                             </c:choose>                              

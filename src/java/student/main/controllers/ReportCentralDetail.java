@@ -2,6 +2,9 @@ package student.main.controllers;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.chrono.ThaiBuddhistChronology;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,17 +23,18 @@ public class ReportCentralDetail extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ParseException {
         response.setContentType("text/html;charset=UTF-8");
+        
         HttpSession session = request.getSession();
 
         if (session.getAttribute("username") != null) {
-
+            
             Database db = new Database();
 
             ReportCantralModel getReportCentral = new ReportCantralModel(db);
 
             List<ReportCentralInfo> enroll = getReportCentral.findEnrollYearAndSemester();
             request.setAttribute("enroll", enroll);
-            
+                        
             RequestDispatcher rs = request.getRequestDispatcher("main-content/report-central-detail.jsp");
             rs.forward(request, response);
 
@@ -40,6 +44,14 @@ public class ReportCentralDetail extends HttpServlet {
             rs.forward(request, response);
 
         }
+    }
+    
+    public String getDate() throws ParseException {
+
+        LocalDate date = LocalDate.parse(LocalDate.now().toString());
+        DateTimeFormatter toThai = DateTimeFormatter.ofPattern("dd/MM/yyyy").withChronology(ThaiBuddhistChronology.INSTANCE);
+
+        return toThai.format(date);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
